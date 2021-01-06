@@ -15,8 +15,8 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-//const YourLink =siteData;
-const YourLink =[['シフト管理システム（自作）','http://miosche0936.php.xdomain.jp'],['gmail-visualizer（ハッカソン）','https://gmail-visualizer.herokuapp.com/']];
+const YourLink =siteData;
+//const YourLink =[['シフト管理システム（自作）','http://miosche0936.php.xdomain.jp'],['gmail-visualizer（ハッカソン）','https://gmail-visualizer.herokuapp.com/']];
 
 
 

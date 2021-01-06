@@ -2,7 +2,7 @@
   if(isset($_GET['add'])) {
     $SiteName = $_GET['NAME'];
     $SiteURL=$_GET['URL'];
-    $ThisSiteURL='http://localhost:8000/';
+    $ThisSiteURL='https://suehiro-mypage.herokuapp.com/';
 
     $items=\DB::table('test')->insert(['sitename' => $SiteName, 'url' => $SiteURL]);
     $alert = "<script type='text/javascript'>alert('作品名： ". $SiteName. " URL: ". $SiteURL. " 登録しました．');
@@ -13,7 +13,7 @@
   if(isset($_GET['remove'])) {
     $SiteName = $_GET['NAME'];
     $SiteURL=$_GET['URL'];
-    $ThisSiteURL='http://localhost:8000/';
+    $ThisSiteURL='https://suehiro-mypage.herokuapp.com/';
 
     $items=\DB::table('test')->where([['sitename',$SiteName],['url',$SiteURL]])->delete();
     $alert = "<script type='text/javascript'>alert('作品名： ". $SiteName. " URL: ". $SiteURL. " 削除しました．');

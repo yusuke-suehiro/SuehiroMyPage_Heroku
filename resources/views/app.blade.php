@@ -24,7 +24,7 @@
 <body>
 
   <?php
-  //  include "../resources/views/DBadd.php";
+    include "../resources/views/DBadd.php";
 ?>
 
 <div class="DBcontrol">
@@ -41,11 +41,11 @@
 </div>
 
     <?php
-  //  include "../resources/views/DBget.php";
+    include "../resources/views/DBget.php";
     ?>
     <div id="appi"></div>
     <script>
-  //    let siteData = <?php //echo $php_json?>;
+      let siteData = <?php echo $php_json?>;
     </script>
     <script type="text/javascript" src="../resources/js/components/App.js"></script>
 
