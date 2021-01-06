@@ -85176,9 +85176,8 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
       marginLeft: '1%'
     }
   };
-}); //const YourLink =siteData;
-
-var YourLink = [['シフト管理システム（自作）', 'http://miosche0936.php.xdomain.jp'], ['gmail-visualizer（ハッカソン）', 'https://gmail-visualizer.herokuapp.com/']];
+});
+var YourLink = siteData;
 function RoopNewLink() {
   var classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
