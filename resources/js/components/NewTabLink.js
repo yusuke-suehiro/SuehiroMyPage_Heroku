@@ -1,5 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
+import TreeView from '@material-ui/lab/TreeView';
+import TreeItem from '@material-ui/lab/TreeItem';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -19,10 +24,28 @@ export function NewTabLink(prop) {
   }
 
   return (
-    <div className={classes.root}>・{prop.name}には
-      <a href="#" onClick={handleClick}>
-        こちら
-      </a>
-    </div>
+    <TreeView
+          className={classes.root}
+          defaultCollapseIcon={<ExpandMoreIcon />}
+      defaultExpandIcon={<ChevronRightIcon />}
+        >
+          <TreeItem nodeId="1" label=
+          <div className={classes.root}>{prop.name}には
+            <a href="#" onClick={handleClick}>
+              こちら
+            </a>
+          </div>>
+            <TreeItem nodeId="2" label={prop.contents} />
+          </TreeItem>
+
+        </TreeView>
   )
 }
+/*
+<div className={classes.root}>・{prop.name}には
+  <a href="#" onClick={handleClick}>
+    こちら
+  </a>
+  {prop.contents}
+</div>
+*/

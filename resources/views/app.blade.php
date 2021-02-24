@@ -32,6 +32,7 @@
   <div>
     <input type="text" name="NAME" placeholder="作品名"></input>
     <input type="text" name="URL" placeholder="URL"></input>
+    <input type="text" name="CONTENT" placeholder="説明"></input>
   </div>
   <div class="BtnControl">
     <button type="submit" name="add">登録</button>

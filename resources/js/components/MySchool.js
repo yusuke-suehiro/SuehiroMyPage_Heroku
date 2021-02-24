@@ -35,7 +35,7 @@ export function MySchool() {
         電子情報システムEP 島研究室
       </div>
       <div className={classes.school}>
-        <NewTabLink name='島研究室' url='http://www.bmer.ynu.ac.jp/'/>
+        <NewTabLink name='島研究室' url='http://www.bmer.ynu.ac.jp/' contents="リハビリテーショングループ所属"/>
       </div>
     </div>
   );

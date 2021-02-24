@@ -29,7 +29,7 @@ export function RoopNewLink() {
       <div className={classes.leftMargin}>
         <React.Fragment>
           {YourLink.map((OutputNum) => (
-            <NewTabLink key={OutputNum} name={OutputNum[0]} url={OutputNum[1]}/>
+            <NewTabLink key={OutputNum} name={OutputNum[0]} url={OutputNum[1]} contents={OutputNum[2]}/>
           ))}
         </React.Fragment>
       </div>

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     design: {
       border: '3px solid rgba(0,0,0,.2)',
       borderRadius: 30,
-      marginTop: '50px',
+      marginTop: '10%',
       marginRight: '10%',
       backgroundColor: 'white'
     },
