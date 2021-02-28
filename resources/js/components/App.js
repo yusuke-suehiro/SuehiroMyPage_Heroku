@@ -54,9 +54,11 @@ const useStyles = makeStyles(() => ({
     marginTop: '71px',
     marginRight: '3%',
     marginLeft: '0.5%',
+    minWidth: '600px',
   },
   title: {
     fontSize: '2.5em',
+    minWidth: '250px',
     marginTop: '1%',
     marginLeft: '3%',
     marginBottom: '10%',
@@ -87,13 +89,13 @@ export function SimpleTabs() {
 
   return (
 
-    <SplitPane split="horizo​​ntal" minSize={50} defaultSize="21%">
-      <SplitPane split="vertical" minSize={50} defaultSize="40%">
-        <div className={classes.title}>
+    <SplitPane split="horizo​​ntal" minSize={50} defaultSize="130px">
+      <SplitPane split="vertical" minSize={50} defaultSize="260px">
+        <div className="title">
           <div>すえひろの</div>
           <div>ホームページ</div>
         </div>
-        <div className={classes.root}>
+        <div className="tabPC">
           <AppBar position="static">
             <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" indicatorColor='primary' className={classes.tab}>
               <Tab label="ホーム" {...a11yProps(0)} />
@@ -104,19 +106,31 @@ export function SimpleTabs() {
           </AppBar>
         </div>
       </SplitPane>
-      <div className={classes.body}>
-        <TabPanel value={value} index={0}>
-          <Home/>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <RoopNewLink/>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <MyInfo/>
-        </TabPanel>
-        <TabPanel value={value} index={3}>
+      <div>
+        <div className="tabTablet">
+          <AppBar position="static">
+            <Tabs value={value} onChange={handleChange} aria-label="simple tabs Tablet" indicatorColor='primary' className={classes.tab}>
+              <Tab label="ホーム" {...a11yProps(0)} />
+              <Tab label="作品" {...a11yProps(1)} />
+              <Tab label="基礎情報" {...a11yProps(2)} />
+              <Tab label="予備" {...a11yProps(3)} />
+            </Tabs>
+          </AppBar>
+        </div>
+        <div className="body">
+          <TabPanel value={value} index={0}>
+            <Home/>
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <RoopNewLink/>
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <MyInfo/>
+          </TabPanel>
+          <TabPanel value={value} index={3}>
 
-        </TabPanel>
+          </TabPanel>
+        </div>
       </div>
     </SplitPane>
 

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -29,7 +29,7 @@
 
 <div class="DBcontrol">
   <form action="app.blade.php" method="get">
-  <div>
+  <div class="textboxes">
     <input type="text" name="NAME" placeholder="作品名"></input>
     <input type="text" name="URL" placeholder="URL"></input>
     <input type="text" name="CONTENT" placeholder="説明"></input>

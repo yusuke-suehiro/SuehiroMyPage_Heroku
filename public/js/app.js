@@ -87078,10 +87078,12 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
       backgroundColor: 'blue',
       marginTop: '71px',
       marginRight: '3%',
-      marginLeft: '0.5%'
+      marginLeft: '0.5%',
+      minWidth: '600px'
     },
     title: {
       fontSize: '2.5em',
+      minWidth: '250px',
       marginTop: '1%',
       marginLeft: '3%',
       marginBottom: '10%',
@@ -87115,15 +87117,15 @@ function SimpleTabs() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_9__["default"], {
     split: "horizo\u200B\u200Bntal",
     minSize: 50,
-    defaultSize: "21%"
+    defaultSize: "130px"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_9__["default"], {
     split: "vertical",
     minSize: 50,
-    defaultSize: "40%"
+    defaultSize: "260px"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.title
+    className: "title"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u3059\u3048\u3072\u308D\u306E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u30DB\u30FC\u30E0\u30DA\u30FC\u30B8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.root
+    className: "tabPC"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     position: "static"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -87140,8 +87142,26 @@ function SimpleTabs() {
     label: "\u57FA\u790E\u60C5\u5831"
   }, a11yProps(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({
     label: "\u4E88\u5099"
-  }, a11yProps(3))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.body
+  }, a11yProps(3))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tabTablet"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    position: "static"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    value: value,
+    onChange: handleChange,
+    "aria-label": "simple tabs Tablet",
+    indicatorColor: "primary",
+    className: classes.tab
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({
+    label: "\u30DB\u30FC\u30E0"
+  }, a11yProps(0))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({
+    label: "\u4F5C\u54C1"
+  }, a11yProps(1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({
+    label: "\u57FA\u790E\u60C5\u5831"
+  }, a11yProps(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({
+    label: "\u4E88\u5099"
+  }, a11yProps(3)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
     value: value,
     index: 0
@@ -87154,7 +87174,7 @@ function SimpleTabs() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Myinformation_js__WEBPACK_IMPORTED_MODULE_10__["MyInfo"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
     value: value,
     index: 3
-  })));
+  }))));
 }
 
 if (document.getElementById('appi')) {
@@ -87196,7 +87216,8 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["ma
       paddingBottom: '1%'
     },
     backColor: {
-      backgroundColor: '#f0f8ff'
+      backgroundColor: '#f0f8ff',
+      fontSize: '1em'
     },
     leftMargin: {
       marginLeft: '1%'
@@ -87217,9 +87238,9 @@ function Home() {
     className: classes.BottomMessage
   }, "\u81EA\u5206\u306E\u30DB\u30FC\u30E0\u30DA\u30FC\u30B8\u306A\u306E\u3067\u3086\u308B\u301C\u304F\u4F5C\u3063\u3066\u3044\u307E\u3059\uFF01\u3069\u3046\u305E\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3057\u307E\u3059(^ \u25BD ^)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.TopMessage
-  }, "\u53F3\u4E0A\u306E\u30C6\u30AD\u30B9\u30C8\u30DC\u30C3\u30AF\u30B9\u306B\u4F5C\u54C1\u540D\u3068URL\u3092\u5165\u308C\u308B\u3068\u300C\u767B\u9332\u300D\u3092\u62BC\u3059\u3068\u4F5C\u54C1\u30BF\u30D6\u306B\u4F5C\u54C1\u304C\u8FFD\u52A0\u3055\u308C\u307E\u3059\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u53F3\u4E0A\u306E\u30C6\u30AD\u30B9\u30C8\u30DC\u30C3\u30AF\u30B9\u306B\u4F5C\u54C1\u540D\u3068URL\uFF0C\u5185\u5BB9\u3092\u5165\u308C\u308B\u3068\u300C\u767B\u9332\u300D\u3092\u62BC\u3059\u3068\u4F5C\u54C1\u30BF\u30D6\u306B\u4F5C\u54C1\u304C\u8FFD\u52A0\u3055\u308C\u307E\u3059\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.BottomMessage
-  }, "\u307E\u305F\uFF0C\u4F5C\u54C1\u540D\u3068URL\u3092\u5165\u308C\u3066\u300C\u524A\u9664\u300D\u3092\u62BC\u3059\u3068\u4F5C\u54C1\u30BF\u30D6\u306E\u5165\u529B\u3057\u305F\u4F5C\u54C1\u304C\u524A\u9664\u3055\u308C\u307E\u3059\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u307E\u305F\uFF0C\u4F5C\u54C1\u540D\u3092\u5165\u308C\u3066\u300C\u524A\u9664\u300D\u3092\u62BC\u3059\u3068\u4F5C\u54C1\u30BF\u30D6\u306B\u3042\u308B\u4F5C\u54C1\u3068\u540C\u3058\u540D\u524D\u306E\u4F5C\u54C1\u304C\u524A\u9664\u3055\u308C\u307E\u3059\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.TopMessage
   }, "\u4F5C\u308B\u4E0A\u3067\u3053\u3060\u308F\u3063\u305F\u30DD\u30A4\u30F3\u30C8\u306F\uFF0C\u81EA\u5206\u306E\u4F5C\u54C1\u3092\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u3067\u7BA1\u7406\u3057\u3066\u3044\u308B\u3068\u3053\u308D\u3067\u3059\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u4F5C\u54C1\u3092\u4F5C\u3063\u3066\u4F5C\u54C1\u304C\u5897\u3048\u305F\u3068\u304D\u306B\u306F\uFF0C\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u304B\u3089\u8FFD\u52A0\u3067\u304D\u308B\u3088\u3046\u306B\u3057\u307E\u3057\u305F\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "\u307E\u305F\uFF0C\u5165\u529B\u3092\u9593\u9055\u3048\u305F\u5834\u5408\u306A\u3069\u306B\u5BFE\u5FDC\u3059\u308B\u305F\u3081\u306B\u524A\u9664\u3059\u308B\u6A5F\u80FD\u3082\u8FFD\u52A0\u3057\u307E\u3057\u305F\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.BottomMessage
@@ -87229,7 +87250,9 @@ function Home() {
     className: classes.BottomMessage
   }, "\u30C7\u30B6\u30A4\u30F3\u306B\u3064\u3044\u3066\u306F\u52C9\u5F37\u3057\u305F\u3053\u3068\u304C\u306A\u3044\u306E\u3067\uFF0C\u52C9\u5F37\u3057\u3066\u307F\u305F\u3044\u3068\u611F\u3058\u307E\u3057\u305F\uFF0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.OneMessage
-  }, "\u65B0\u3057\u3044\u4F5C\u54C1\u3092\u4F5C\u3063\u305F\u308A\u3057\u305F\u3068\u304D\u306B\u306F\u968F\u6642\u66F4\u65B0\u3057\u3066\u3044\u304D\u305F\u3044\u3068\u601D\u3063\u3066\u307E\u3059\u306E\u3067\uFF0C\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3057\u307E\u3059\uFF01"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "\u65B0\u3057\u3044\u4F5C\u54C1\u3092\u4F5C\u3063\u305F\u308A\u3057\u305F\u3068\u304D\u306B\u306F\u968F\u6642\u66F4\u65B0\u3057\u3066\u3044\u304D\u305F\u3044\u3068\u601D\u3063\u3066\u307E\u3059\u306E\u3067\uFF0C\u3088\u308D\u3057\u304F\u304A\u9858\u3044\u3057\u307E\u3059\uFF01"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.OneMessage
+  }, "(\u8FFD\u8A18) \u30BF\u30D6\u30EC\u30C3\u30C8\u7528\u306B\u30EC\u30B9\u30DD\u30F3\u30B7\u30D6\u5BFE\u5FDC\u3057\u307E\u3057\u305F\uFF0E"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root
   }));
 }
@@ -87257,12 +87280,16 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["ma
   school: {
     textAlign: 'left',
     paddingTop: '3%',
-    marginLeft: '1%'
+    marginLeft: '1%',
+    fontSize: '1em'
   },
   top: {
     textAlign: 'left',
     paddingTop: '1%',
     marginLeft: '1%'
+  },
+  fin: {
+    marginBottom: '10px'
   }
 });
 function MySchool() {
@@ -87319,11 +87346,12 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["ma
       borderRadius: '3px'
     },
     rootBtm: {
-      marginTop: '3.1%',
       backgroundColor: '#f0f8ff',
       borderTop: '6px solid rgba(0,0,0,.2)',
-      borderRadius: '3px',
-      marginRight: '11%'
+      borderRadius: '3px'
+    },
+    back: {
+      backgroundColor: '#f0f8ff'
     }
   };
 });
@@ -87331,18 +87359,11 @@ function MyInfo() {
   var classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    split: "horizo\u200B\u200Bntal",
-    minSize: 50,
-    defaultSize: "45%"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_split_pane__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    split: "vertical",
-    minSize: 50,
-    defaultSize: "80%",
-    className: classes.body
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.back
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MySchool_js__WEBPACK_IMPORTED_MODULE_4__["MySchool"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Twitter_js__WEBPACK_IMPORTED_MODULE_2__["Twitter"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.rootBtm
-  })));
+  }));
 }
 
 /***/ }),
@@ -87376,7 +87397,8 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["ma
   return {
     root: {
       paddingTop: '5px',
-      paddingBottom: '5px'
+      paddingBottom: '5px',
+      fontSize: '1em'
     }
   };
 });
@@ -87403,7 +87425,9 @@ function NewTabLink(prop) {
     }, "\u3053\u3061\u3089"))
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab_TreeItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
     nodeId: "2",
-    label: prop.contents
+    label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: classes.root
+    }, prop.contents)
   })));
 }
 /*
@@ -87498,16 +87522,15 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["ma
   design: {
     border: '3px solid rgba(0,0,0,.2)',
     borderRadius: 30,
-    marginTop: '10%',
-    marginRight: '10%',
+    marginTop: '3%',
+    marginRight: '30%',
+    marginLeft: '1%',
     backgroundColor: 'white'
   }
 });
 function Twitter() {
   var classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.backColor
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.design
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.twitter
@@ -87518,12 +87541,12 @@ function Twitter() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "./image/TwitterLogo.png",
     border: "0",
-    width: "60%",
+    width: "10%",
     alt: "Twitter\u30A2\u30AB\u30A6\u30F3\u30C8",
     title: "\u9375\u30A2\u30AB\u306A\u306E\u3067\u30D5\u30A9\u30ED\u30EA\u30AF\u9001\u3063\u3066\u306D"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.message
-  }, "\u203BTwitter\u30A2\u30AB\u30A6\u30F3\u30C8")));
+  }, "\u203BTwitter\u30A2\u30AB\u30A6\u30F3\u30C8"));
 }
 
 /***/ }),

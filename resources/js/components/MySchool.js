@@ -7,12 +7,16 @@ const useStyles = makeStyles({
     school: {
       textAlign: 'left',
       paddingTop: '3%',
-      marginLeft: '1%'
+      marginLeft: '1%',
+      fontSize: '1em',
     },
     top: {
       textAlign: 'left',
       paddingTop: '1%',
-      marginLeft: '1%'
+      marginLeft: '1%',
+    },
+    fin: {
+      marginBottom: '10px'
     }
 });
 

@@ -10,6 +10,7 @@ const useStyles = makeStyles(() => ({
   root: {
     paddingTop: '5px',
     paddingBottom: '5px',
+    fontSize: '1em',
   },
 }));
 
@@ -35,7 +36,9 @@ export function NewTabLink(prop) {
               こちら
             </a>
           </div>>
-            <TreeItem nodeId="2" label={prop.contents} />
+            <TreeItem nodeId="2" label=
+            <div className={classes.root}>{prop.contents}
+            </div> />
           </TreeItem>
 
         </TreeView>

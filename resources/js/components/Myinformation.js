@@ -15,12 +15,13 @@ const useStyles = makeStyles(() => ({
     borderRadius: '3px',
   },
   rootBtm: {
-    marginTop: '3.1%',
     backgroundColor: '#f0f8ff',
     borderTop: '6px solid rgba(0,0,0,.2)',
     borderRadius: '3px',
-    marginRight: '11%',
   },
+  back: {
+    backgroundColor: '#f0f8ff',
+  }
 }));
 
 
@@ -31,14 +32,11 @@ export function MyInfo() {
   return (
     <div>
       <div className={classes.root}></div>
-      <SplitPane split="horizo​​ntal" minSize={50} defaultSize="45%">
-          <SplitPane split="vertical" minSize={50} defaultSize="80%" className={classes.body}>
+        <div className={classes.back}>
             <MySchool/>
             <Twitter/>
-          </SplitPane>
-
-        <div className={classes.rootBtm}></div>
-      </SplitPane>
+        </div>
+      <div className={classes.rootBtm}></div>
     </div>
   )
 }
