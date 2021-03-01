@@ -87085,7 +87085,7 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["ma
       fontSize: '2.5em',
       minWidth: '250px',
       marginTop: '1%',
-      marginLeft: '3%',
+      marginLeft: '10px',
       marginBottom: '10%',
       background: 'linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%)',
       boxShadow: '0 3px 5px 2px rgba(0,0,0,.2)'

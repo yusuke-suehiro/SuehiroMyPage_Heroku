@@ -5,6 +5,7 @@
 /vendor
 .env
 .env_heroku
+.env_heroku1
 .env.backup
 .phpunit.result.cache
 Homestead.json
