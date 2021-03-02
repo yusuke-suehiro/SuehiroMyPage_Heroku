@@ -68,7 +68,7 @@ const useStyles = makeStyles(() => ({
   tab: {
     background: 'linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%)',
     color: '#000000',
-    
+
   },
   body: {
     marginLeft: '3%',
@@ -89,12 +89,15 @@ export function SimpleTabs() {
   };
 
   return (
-
+<div>
     <SplitPane split="horizo​​ntal" minSize={50} defaultSize="130px">
       <SplitPane split="vertical" minSize={50} defaultSize="260px">
         <div className="title">
-          <div>すえひろの</div>
-          <div>ホームページ</div>
+          <div className="titlePC">すえひろの</div>
+          <div className="titlePC">ホームページ</div>
+          <div className="titleSmart">
+            すえひろのホームページ
+          </div>
         </div>
         <div className="tabPC">
           <AppBar position="static">
@@ -134,7 +137,31 @@ export function SimpleTabs() {
         </div>
       </div>
     </SplitPane>
+    <div className="tabSmart">
+      <AppBar position="static">
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs Smart" indicatorColor='primary' className={classes.tab}>
+          <Tab label="ホーム" {...a11yProps(0)} />
+          <Tab label="作品" {...a11yProps(1)} />
+          <Tab label="基礎情報" {...a11yProps(2)} />
+          <Tab label="予備" {...a11yProps(3)} />
+        </Tabs>
+      </AppBar>
+    </div>
+    <div className="bodySmart">
+      <TabPanel value={value} index={0}>
+        <Home/>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <RoopNewLink/>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <MyInfo/>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
 
+      </TabPanel>
+    </div>
+</div>
   );
 }
 

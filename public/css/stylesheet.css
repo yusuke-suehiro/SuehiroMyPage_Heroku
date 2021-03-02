@@ -21,6 +21,12 @@
   background: linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%);
   box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
  }
+ .titlePC {
+   display: flex;
+  }
+ .titleSmart {
+   display: none;
+  }
  .tabPC {
    flex-grow: 1;
    background-color: blue;
@@ -32,6 +38,9 @@
 .tabTablet {
   display: none;
  }
+ .tabSmart {
+   display: none;
+ }
 .body {
   margin-left: 30px;
   margin-right: 30px;
@@ -39,6 +48,9 @@
   padding: 10px 0px 100vh 10px;
   overflow: scroll;
   height: 100vh;
+}
+.bodySmart {
+  display: none;
 }
 .textboxes {
   font-size: 1em;
@@ -54,6 +66,9 @@
     background: linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%);
     box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
    }
+   .titleSmart {
+     display: none;
+    }
   .BtnControl {
      text-align: left;
      margin-top: 5px;
@@ -89,14 +104,86 @@
     overflow: scroll;
     height: 100vh;
   }
-
+  .bodySmart {
+    display: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-left: 3px solid rgba(0,0,0,.2);
+    padding: 0px 0px 100vh 10px;
+    overflow: scroll;
+    height: 100vh;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .BtnControl {
-     text-align: left;
+     text-align: right;
      margin-top: 2px;
      position: relative;
      z-index:5;
    }
+   .title {
+     font-size: 2em;
+     width: 11em;
+     margin-top: 1%;
+     margin-left: 15px;
+     margin-bottom: 1%;
+     background: linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%);
+     box-shadow: 0 3px 5px 2px rgba(0,0,0,.2);
+    }
+   .titlePC {
+     display:none;
+   }
+    .titleSmart {
+      display:flex;
+     }
+     .tabPC {
+       display: none;
+      }
+      .tabTablet {
+        display: none;
+        flex-grow: 1;
+        background-color: blue;
+        margin-right: 10px;
+        margin-left: 15px;
+        min-width: 600px;
+      }
+      .tabSmart {
+        display: flex;
+        flex-grow: 1;
+        background-color: blue;
+        margin-right: 10px;
+        margin-left: 15px;
+        min-width: 600px;
+      }
+        .textboxes {
+          min-width: 180px;
+          display: flex;
+          flex-direction: column;
+          margin-top: 5em;
+          margin-left: 15px;
+          font-size: 1em;
 
+        }
+        .body {
+          display: none;
+          margin-left: 30px;
+          margin-top: 10px;
+          margin-right: 30px;
+          border-left: 3px solid rgba(0,0,0,.2);
+          padding: 0px 0px 100vh 10px;
+          overflow: scroll;
+          height: 100vh;
+        }
+        .bodySmart {
+          display: block;
+          margin-left: 30px;
+          margin-top: 10px;
+          margin-right: 30px;
+          border-left: 3px solid rgba(0,0,0,.2);
+          padding: 0px 0px 100vh 10px;
+          overflow: scroll;
+          height: 100vh;
+        }
 }

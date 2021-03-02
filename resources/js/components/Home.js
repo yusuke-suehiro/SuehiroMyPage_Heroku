@@ -52,6 +52,7 @@ export function Home() {
 
       <div className={classes.OneMessage}>新しい作品を作ったりしたときには随時更新していきたいと思ってますので，よろしくお願いします！</div>
       <div className={classes.OneMessage}>(追記) タブレット用にレスポンシブ対応しました．</div>
+      <div className={classes.OneMessage}>(追記) スマートフォン用にレスポンシブ対応しました．</div>
       </div>
       </div>
       <div className={classes.root}></div>
