@@ -118,7 +118,8 @@
 
 @media screen and (max-width: 480px) {
   .BtnControl {
-     text-align: right;
+     text-align: left;
+     margin-left: 15px;
      margin-top: 2px;
      position: relative;
      z-index:5;

@@ -68,7 +68,6 @@ const useStyles = makeStyles(() => ({
   tab: {
     background: 'linear-gradient(150deg, #FFFFFF 30%, #FFFFFF 90%)',
     color: '#000000',
-
   },
   body: {
     marginLeft: '3%',
